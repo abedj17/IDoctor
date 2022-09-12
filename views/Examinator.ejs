@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Patient.css">
+    <title>Examinator</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navlinks">
+        <ul>
+            <li><a href="Home">Home</a></li>
+            <li><a href="Log-In">Logout</a></li>
+            <li><a href="PatientListExaminator">Patient List</a></li>
+            <li><a href="BloodTestValues">Blood Test Values</a></li>
+        </ul>
+    </div>
+</nav>
+<div id="gradient"></div>
+<div id="card">
+  <h2>Examinator Profile</h2>
+  <p>Welcome Examinator <%= p.FirstName %> <%= p.LastName %> ☊</p>
+  <p>ID: <%= p.id %></a>
+  <p>Email: <%= p.email %></a>
+  <p> Birthdate: <%= p.Birthdate %></p>
+  <span class="left bottom"> tel: <%= p.Phone %></span>
+  <span class="right bottom">Gender: <%= p.Gender %></span>
+</div>
+<br><br><br><br><br><br>
+<div class="row">
+              
+  <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Yitzhack%20I.%20Rager%20Blvd%20151,%20Be'er%20Sheva+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/wearable-gps/">adventure gps</a></iframe></div>
+    <div class="content">
+        <h3>Our Address</h3>
+        <p>Soroka,</p>
+        <p>Yitzhack I. Rager Blvd 151, Be'er Sheva</p>
+
+
+    </div>
+
+</div>
+<br><br><br><br><br><br>
+      <div id="current_date"></p>
+        <script>
+        date = new Date();
+        year = date.getFullYear();
+        month = date.getMonth() + 1;
+        day = date.getDate();
+        document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;
+        </script>
+</body>
+</html>
